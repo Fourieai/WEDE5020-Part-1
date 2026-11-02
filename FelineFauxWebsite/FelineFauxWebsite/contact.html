@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Contact Feline Faux by email or visit our Pretoria and Cape Town offices.">
+    <meta name="theme-color" content="#111111">
+
+    <title>Contact Us | Feline Faux</title>
+
+    <link rel="stylesheet" href="css_assets/style.css">
+    <link rel="stylesheet" href="css_assets/contact.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <img src="_images/feline-faux-logo.png" alt="Feline Faux logo">
+        </a>
+
+        <button class="nav-toggle" type="button"
+        aria-expanded="false" aria-controls="nav-links">
+            ☰ Menu
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main id="main-content">
+
+    <!-- HERO SECTION -->
+
+    <section class="contact-hero">
+
+        <div class="contact-hero-content">
+
+            <span class="section-label">CONTACT FELINE FAUX</span>
+
+            <h1>Get In Touch</h1>
+
+            <p>
+                Have a question or a message for our team?
+                We would love to hear from you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT INFORMATION AND FORM -->
+
+    <section class="contact-content">
+
+        <div class="contact-info">
+
+            <span class="section-label">WE'RE LISTENING</span>
+
+            <h2>Speak Up For Wildlife</h2>
+
+            <p>
+                Whether you want to share feedback, ask about our work
+                or find out how you can help protect vulnerable
+                ecosystems, send us a message.
+            </p>
+
+            <div class="contact-details">
+
+                <div>
+                    <h3>Email</h3>
+                    <p>
+                        <a href="mailto:felinefauxorg@gmail.com">
+                            felinefauxorg@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Volunteer or Sponsor</h3>
+                    <p>
+                        Please use our
+                        <a href="enquiry.html">enquiry form</a>.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-form-container">
+
+            <h2>Send Us A Message</h2>
+
+            <form class="contact-form" id="contact-form" data-form-purpose="contact">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name"
+                    placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                    placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject"
+                    placeholder="What is your message about?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone"
+                    placeholder="012 345 6789">
+                </div>
+
+                <div class="form-group">
+                    <label for="message-type">Type of Message</label>
+
+                    <select id="message-type" name="messageType" required>
+                        <option value="">Select a message type</option>
+                        <option>General question</option>
+                        <option>Feedback</option>
+                        <option>Media or partnership</option>
+                        <option>Report a problem</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+
+                    <textarea id="message" name="message"
+                    rows="6" minlength="10" maxlength="1500"
+                    placeholder="Write your message here..."
+                    required></textarea>
+                </div>
+
+                <button type="submit" class="button">
+                    Send Message
+                </button>
+
+                <p id="contact-feedback" class="form-feedback"
+                role="status" aria-live="polite"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- OFFICE LOCATIONS -->
+
+    <section class="locations">
+
+        <div class="locations-header">
+
+            <span class="section-label">FIND US</span>
+
+            <h2>Our Locations</h2>
+
+            <p>Visit our offices in Pretoria and Cape Town.</p>
+
+        </div>
+
+
+        <div class="locations-grid">
+
+            <article class="location-card">
+
+                <h3>Pretoria Office</h3>
+
+                <p>Menlyn Corporate Park, Pretoria, South Africa</p>
+
+                <div id="map-pretoria" class="map"></div>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Menlyn+Corporate+Park+Pretoria"
+                target="_blank" rel="noopener noreferrer">
+                    Open in Google Maps →
+                </a>
+
+            </article>
+
+
+            <article class="location-card">
+
+                <h3>Cape Town Office</h3>
+
+                <p>Portside Tower, Cape Town, South Africa</p>
+
+                <div id="map-capetown" class="map"></div>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Portside+Tower+Cape+Town"
+                target="_blank" rel="noopener noreferrer">
+                    Open in Google Maps →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>&copy; 2026 Feline Faux. All Rights Reserved.</p>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="js_assets/script.js" defer></script>
+
+</body>
+</html>
